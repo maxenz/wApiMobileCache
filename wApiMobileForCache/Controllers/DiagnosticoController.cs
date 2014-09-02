@@ -15,7 +15,7 @@ namespace wApiMobileForCache.Controllers
     {
         WebService ws = new WebService();
 
-        public List<Diagnostico> Get(int id)
+        public List<Diagnostico> Get()
         {
             DataSet dsDiagnostico = ws.getDatosActualizadosFromTabla("Diagnosticos");
             List<Diagnostico> lstDiagnosticos = ListHelper.ToList<Diagnostico>(dsDiagnostico.Tables[0]);
