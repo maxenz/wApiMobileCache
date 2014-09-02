@@ -213,12 +213,12 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
-    <Content Include="Service References\wsIncidentesMobile\configuration91.svcinfo" />
-    <Content Include="Service References\wsIncidentesMobile\configuration.svcinfo" />
-    <Content Include="Service References\wsIncidentesMobile\Reference.svcmap">
+    <None Include="Service References\wsIncidentesMobile\configuration91.svcinfo" />
+    <None Include="Service References\wsIncidentesMobile\configuration.svcinfo" />
+    <None Include="Service References\wsIncidentesMobile\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
-    </Content>
+    </None>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -246,10 +246,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Service References\wsIncidentesMobile\WebServices.wsdl" />
+    <None Include="Service References\wsIncidentesMobile\WebServices1.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Context\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
