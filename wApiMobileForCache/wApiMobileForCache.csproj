@@ -124,10 +124,20 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Context\WebService.cs" />
+    <Compile Include="Controllers\AccionesController.cs" />
+    <Compile Include="Controllers\DiagnosticoController.cs" />
+    <Compile Include="Controllers\HistoriaClinicaController.cs" />
+    <Compile Include="Controllers\MotivosController.cs" />
+    <Compile Include="Controllers\PushNotificationController.cs" />
     <Compile Include="Controllers\ServiciosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Diagnostico.cs" />
+    <Compile Include="Models\HistoriaClinica.cs" />
+    <Compile Include="Models\Motivo.cs" />
+    <Compile Include="Models\Resultado.cs" />
     <Compile Include="Models\Servicio.cs" />
     <Compile Include="Models\ServicioDetalle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -250,7 +260,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Context\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
