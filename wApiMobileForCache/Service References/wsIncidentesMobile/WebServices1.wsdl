@@ -2,6 +2,26 @@
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:s0="http://tempuri.org" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://tempuri.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org">
+      <s:element name="GetFullList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" name="pTbl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFullListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="GetFullListResult" type="s0:DataSet" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DataSet">
+        <s:sequence>
+          <s:element ref="s:schema" />
+          <s:any />
+        </s:sequence>
+      </s:complexType>
       <s:element name="GetViaje">
         <s:complexType>
           <s:sequence>
@@ -17,12 +37,6 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:complexType name="DataSet">
-        <s:sequence>
-          <s:element ref="s:schema" />
-          <s:any />
-        </s:sequence>
-      </s:complexType>
       <s:element name="GetViajesMovil">
         <s:complexType>
           <s:sequence>
@@ -37,8 +51,72 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="SetFinal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" name="pInc" type="s:long" />
+            <s:element minOccurs="0" name="pMov" type="s:string" />
+            <s:element minOccurs="0" name="pDig" type="s:long" />
+            <s:element minOccurs="0" name="pMot" type="s:long" />
+            <s:element minOccurs="0" name="pAviCos" type="s:long" />
+            <s:element minOccurs="0" name="pObs" type="s:string" />
+            <s:element minOccurs="0" name="pLat" type="s:decimal" />
+            <s:element minOccurs="0" name="pLon" type="s:decimal" />
+            <s:element minOccurs="0" name="pUsr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetFinalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="SetFinalResult" type="s0:DataSet" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetLlegada">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" name="pInc" type="s:long" />
+            <s:element minOccurs="0" name="pMov" type="s:string" />
+            <s:element minOccurs="0" name="pLat" type="s:decimal" />
+            <s:element minOccurs="0" name="pLon" type="s:decimal" />
+            <s:element minOccurs="0" name="pUsr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetLlegadaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="SetLlegadaResult" type="s0:DataSet" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSalida">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" name="pInc" type="s:long" />
+            <s:element minOccurs="0" name="pMov" type="s:string" />
+            <s:element minOccurs="0" name="pLat" type="s:decimal" />
+            <s:element minOccurs="0" name="pLon" type="s:decimal" />
+            <s:element minOccurs="0" name="pUsr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSalidaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="SetSalidaResult" type="s0:DataSet" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
+  <wsdl:message name="GetFullListSoapIn">
+    <wsdl:part name="parameters" element="s0:GetFullList" />
+  </wsdl:message>
+  <wsdl:message name="GetFullListSoapOut">
+    <wsdl:part name="parameters" element="s0:GetFullListResponse" />
+  </wsdl:message>
   <wsdl:message name="GetViajeSoapIn">
     <wsdl:part name="parameters" element="s0:GetViaje" />
   </wsdl:message>
@@ -51,7 +129,29 @@
   <wsdl:message name="GetViajesMovilSoapOut">
     <wsdl:part name="parameters" element="s0:GetViajesMovilResponse" />
   </wsdl:message>
+  <wsdl:message name="SetFinalSoapIn">
+    <wsdl:part name="parameters" element="s0:SetFinal" />
+  </wsdl:message>
+  <wsdl:message name="SetFinalSoapOut">
+    <wsdl:part name="parameters" element="s0:SetFinalResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetLlegadaSoapIn">
+    <wsdl:part name="parameters" element="s0:SetLlegada" />
+  </wsdl:message>
+  <wsdl:message name="SetLlegadaSoapOut">
+    <wsdl:part name="parameters" element="s0:SetLlegadaResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetSalidaSoapIn">
+    <wsdl:part name="parameters" element="s0:SetSalida" />
+  </wsdl:message>
+  <wsdl:message name="SetSalidaSoapOut">
+    <wsdl:part name="parameters" element="s0:SetSalidaResponse" />
+  </wsdl:message>
   <wsdl:portType name="IncidentesMobileSoap">
+    <wsdl:operation name="GetFullList">
+      <wsdl:input message="s0:GetFullListSoapIn" />
+      <wsdl:output message="s0:GetFullListSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="GetViaje">
       <wsdl:input message="s0:GetViajeSoapIn" />
       <wsdl:output message="s0:GetViajeSoapOut" />
@@ -60,9 +160,30 @@
       <wsdl:input message="s0:GetViajesMovilSoapIn" />
       <wsdl:output message="s0:GetViajesMovilSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="SetFinal">
+      <wsdl:input message="s0:SetFinalSoapIn" />
+      <wsdl:output message="s0:SetFinalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetLlegada">
+      <wsdl:input message="s0:SetLlegadaSoapIn" />
+      <wsdl:output message="s0:SetLlegadaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetSalida">
+      <wsdl:input message="s0:SetSalidaSoapIn" />
+      <wsdl:output message="s0:SetSalidaSoapOut" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="IncidentesMobileSoap" type="s0:IncidentesMobileSoap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetFullList">
+      <soap:operation soapAction="http://tempuri.org/WebServices.IncidentesMobile.GetFullList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetViaje">
       <soap:operation soapAction="http://tempuri.org/WebServices.IncidentesMobile.GetViaje" style="document" />
       <wsdl:input>
@@ -74,6 +195,33 @@
     </wsdl:operation>
     <wsdl:operation name="GetViajesMovil">
       <soap:operation soapAction="http://tempuri.org/WebServices.IncidentesMobile.GetViajesMovil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetFinal">
+      <soap:operation soapAction="http://tempuri.org/WebServices.IncidentesMobile.SetFinal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetLlegada">
+      <soap:operation soapAction="http://tempuri.org/WebServices.IncidentesMobile.SetLlegada" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSalida">
+      <soap:operation soapAction="http://tempuri.org/WebServices.IncidentesMobile.SetSalida" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

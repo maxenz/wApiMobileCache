@@ -5,36 +5,32 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using wApiMobileForCache.Context;
 using wApiMobileForCache.Models;
 using wApiMobileForCache.Utils;
+using wApiMobileForCache.wsIncidentesMobile;
 
 namespace wApiMobileForCache.Controllers
 {
     public class ServiciosController : ApiController
     {
+        WebService ws = new WebService();
 
-        // GET api/<controller>
         public List<Servicio> Get()
         {
 
             string idMovil = Helper.getValueFromQueryString("idMovil");
-            wsIncidentesMobile.IncidentesMobileSoapClient ws = new wsIncidentesMobile.IncidentesMobileSoapClient();
-            ws.Open();
-            DataSet dsViajes = ws.GetViajesMovil(idMovil);
-            ws.Abort();
+            DataSet dsViajes = ws.getViajesMovil(idMovil);
             List<Servicio> lstServ = ListHelper.ToList<Servicio>(dsViajes.Tables[0]);
             return lstServ;
            
         }
 
-        // GET api/<controller>/5
         public ServicioDetalle Get(int id)
         {
+
             string idMovil = Helper.getValueFromQueryString("idMovil");
-            wsIncidentesMobile.IncidentesMobileSoapClient ws = new wsIncidentesMobile.IncidentesMobileSoapClient();
-            ws.Open();
-            DataSet dsViaje = ws.GetViaje(id, idMovil);
-            ws.Abort();
+            DataSet dsViaje = ws.getViaje(idMovil,id);
             List<ServicioDetalle> lstServ = ListHelper.ToList<ServicioDetalle>(dsViaje.Tables[0]);
             return lstServ.FirstOrDefault<ServicioDetalle>();
             
