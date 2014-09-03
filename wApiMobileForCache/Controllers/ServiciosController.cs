@@ -18,24 +18,19 @@ namespace wApiMobileForCache.Controllers
 
         public List<Servicio> Get()
         {
-
             string idMovil = Helper.getValueFromQueryString("idMovil");
             DataSet dsViajes = ws.getViajesMovil(idMovil);
             List<Servicio> lstServ = ListHelper.ToList<Servicio>(dsViajes.Tables[0]);
-            return lstServ;
-           
+            Helper.formatColorServicios(ref lstServ);
+            return lstServ;         
         }
 
         public ServicioDetalle Get(int id)
         {
-
             string idMovil = Helper.getValueFromQueryString("idMovil");
             DataSet dsViaje = ws.getViaje(idMovil,id);
             List<ServicioDetalle> lstServ = ListHelper.ToList<ServicioDetalle>(dsViaje.Tables[0]);
-            return lstServ.FirstOrDefault<ServicioDetalle>();
-            
+            return lstServ.FirstOrDefault<ServicioDetalle>();          
         }
-
-    }
-    
+    }  
 }
