@@ -22,7 +22,7 @@
     <MetadataSource Address="http://200.49.156.125:57772/csp/shaman/WebServices.IncidentesMobile.cls?WSDL" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="WebServices1.wsdl" MetadataType="Wsdl" ID="4a662833-40e2-42ef-a42a-6547d7335498" SourceId="1" SourceUrl="http://200.49.156.125:57772/csp/shaman/WebServices.IncidentesMobile.cls?WSDL" />
+    <MetadataFile FileName="WebServices1.wsdl" MetadataType="Wsdl" ID="a4dc1c3b-b751-48e0-818e-25aef977c848" SourceId="1" SourceUrl="http://200.49.156.125:57772/csp/shaman/WebServices.IncidentesMobile.cls?WSDL" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

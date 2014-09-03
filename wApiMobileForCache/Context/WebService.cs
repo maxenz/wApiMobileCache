@@ -34,8 +34,11 @@ namespace wApiMobileForCache.Context
         }
 
         public DataSet getHistoriaClinica(int idServicio)
-        {   
-            return new DataSet();
+        {
+            ws.Open();
+            DataSet dsHistoriaClinica = ws.GetHC(idServicio);
+            ws.Abort();
+            return dsHistoriaClinica;
         }
 
         public DataSet getDatosActualizadosFromTabla(string tabla)
@@ -63,6 +66,26 @@ namespace wApiMobileForCache.Context
             ws.Abort();
             Resultado resultado = ListHelper.ToList<Resultado>(dtResultado).FirstOrDefault();
             if (resultado.Message == "") resultado.Message = "La salida se dio correctamente";
+            return resultado;
+        }
+
+        public Resultado setFinalServicio(string movil, int viajeID, int motivoID, int diagnosticoID, string observaciones, int copago)
+        {
+            ws.Open();
+            DataTable dtResultado = ws.SetFinal(viajeID, movil, diagnosticoID, motivoID, copago, observaciones, 0, 0, "").Tables[0];
+            ws.Abort();
+            Resultado resultado = ListHelper.ToList<Resultado>(dtResultado).FirstOrDefault();
+            if (resultado.Message == "") resultado.Message = "El servicio se ha finalizado correctamente";
+            return resultado;
+        }
+
+        public Resultado setCancelacionServicio(string movil, int viajeID, string observaciones)
+        {
+            ws.Open();
+            DataTable dtResultado = ws.SetCancelacion(viajeID, movil, observaciones, 0, 0, "").Tables[0];
+            ws.Abort();
+            Resultado resultado = ListHelper.ToList<Resultado>(dtResultado).FirstOrDefault();
+            if (resultado.Message == "") resultado.Message = "El servicio se ha cancelado correctamente";
             return resultado;
         }
 

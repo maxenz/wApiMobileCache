@@ -9,10 +9,10 @@ namespace wApiMobileForCache.Models
     public class ServicioDetalle : Servicio
     {
         [Key]
-        public byte HabSalida { get; set; }
-        public byte HabLlegada { get; set; }
-        public byte HabFinal { get; set; }
-        public byte HabCancelacion { get; set; }
+        public decimal HabSalida { get; set; }
+        public decimal HabLlegada { get; set; }
+        public decimal HabFinal { get; set; }
+        public decimal HabCancelacion { get; set; }
         public String FecIncidente { get; set; }
         public String NroAfiliado { get; set; }
         public String Aviso { get; set; }
@@ -20,7 +20,7 @@ namespace wApiMobileForCache.Models
         public String EntreCalle1 { get; set; }
         public String EntreCalle2 { get; set; }
         public String Referencia { get; set; }
-        public String Sintoma { get; set; }
+        public String Sintomas { get; set; }
         public String Paciente { get; set; }
         public String PlanId { get; set; }
         public decimal CoPago { get; set; }

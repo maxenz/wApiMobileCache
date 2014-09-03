@@ -19,6 +19,8 @@ namespace wApiMobileForCache.Controllers
         {
             DataSet dsHistoriaClinica = ws.getHistoriaClinica(id);
             List<HistoriaClinica> lstHistoriaClinica = ListHelper.ToList<HistoriaClinica>(dsHistoriaClinica.Tables[0]);
+            Helper.formatColorHC(ref lstHistoriaClinica);
+            Helper.formatFechaHC(ref lstHistoriaClinica);
             return lstHistoriaClinica;
         }
     }

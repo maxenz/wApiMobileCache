@@ -30,7 +30,9 @@ namespace wApiMobileForCache.Controllers
             string idMovil = Helper.getValueFromQueryString("idMovil");
             DataSet dsViaje = ws.getViaje(idMovil,id);
             List<ServicioDetalle> lstServ = ListHelper.ToList<ServicioDetalle>(dsViaje.Tables[0]);
-            return lstServ.FirstOrDefault<ServicioDetalle>();          
+            ServicioDetalle servicio = lstServ.FirstOrDefault();
+            servicio.ColorHexa = Helper.argbToHexa(servicio.ColorHexa);
+            return servicio;
         }
     }  
 }

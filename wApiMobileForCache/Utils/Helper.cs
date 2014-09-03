@@ -21,9 +21,36 @@ namespace wApiMobileForCache.Utils
         {
             foreach (Servicio s in servicios)
             {
-                Color colorArgb = Color.FromArgb(Convert.ToInt32(s.ColorHexa));
-                s.ColorHexa = "#" + colorArgb.R.ToString("X2") + colorArgb.G.ToString("X2") + colorArgb.B.ToString("X2");                                 
+                s.ColorHexa = argbToHexa(s.ColorHexa);                                
             }
         }
+
+        public static void formatColorHC(ref List<HistoriaClinica> hc)
+        {
+            foreach (HistoriaClinica h in hc)
+            {
+                h.ColorHexa = argbToHexa(h.ColorHexa);
+            }
+        }
+
+        public static void formatFechaHC(ref List<HistoriaClinica> hc)
+        {
+            foreach (HistoriaClinica h in hc)
+            {
+                h.FecIncidente = ansiFechaToFormatted(h.FecIncidente);
+            }
+        }
+
+        public static string ansiFechaToFormatted(string fecha)
+        {
+            return fecha.Substring(6, 2) + "/" + fecha.Substring(4, 2) + "/" + fecha.Substring(0, 4);
+        }
+
+        public static string argbToHexa(string colorFromConsulta)
+        {
+            Color colorArgb = Color.FromArgb(Convert.ToInt32(colorFromConsulta));
+            return colorArgb.R.ToString("X2") + colorArgb.G.ToString("X2") + colorArgb.B.ToString("X2");   
+        }
+
     }
 }

@@ -11,7 +11,7 @@ using wApiMobileForCache.Utils;
 
 namespace wApiMobileForCache.Controllers
 {
-    public class DiagnosticoController : ApiController
+    public class DiagnosticosController : ApiController
     {
         WebService ws = new WebService();
 

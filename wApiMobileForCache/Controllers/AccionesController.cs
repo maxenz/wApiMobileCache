@@ -27,5 +27,19 @@ namespace wApiMobileForCache.Controllers
             return JsonConvert.SerializeObject(resultado);
         }
 
+        [HttpPost]
+        public string setFinalServicio(string movil, int viajeID, int motivoID, int diagnosticoID, string observaciones, int copago)
+        {
+            Resultado resultado = ws.setFinalServicio(movil, viajeID, motivoID, diagnosticoID, observaciones,copago);
+            return JsonConvert.SerializeObject(resultado);
+        }
+
+        [HttpPost]
+        public string setCancelacionServicio(string movil, int viajeID, string observaciones)
+        {
+            Resultado resultado = ws.setCancelacionServicio(movil, viajeID, observaciones);
+            return JsonConvert.SerializeObject(resultado);
+        }
+
     }
 }

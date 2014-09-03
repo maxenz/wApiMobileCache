@@ -126,7 +126,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Context\WebService.cs" />
     <Compile Include="Controllers\AccionesController.cs" />
-    <Compile Include="Controllers\DiagnosticoController.cs" />
+    <Compile Include="Controllers\DiagnosticosController.cs" />
     <Compile Include="Controllers\HistoriaClinicaController.cs" />
     <Compile Include="Controllers\MotivosController.cs" />
     <Compile Include="Controllers\PushNotificationController.cs" />
@@ -256,7 +256,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <None Include="Service References\wsIncidentesMobile\WebServices1.wsdl" />
+    <Content Include="Service References\wsIncidentesMobile\WebServices1.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

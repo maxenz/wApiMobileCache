@@ -7,7 +7,7 @@ namespace wApiMobileForCache.Models
 {
     public class Resultado
     {
-        public int Code { get; set; }
+        public decimal Code { get; set; }
         public string Message { get; set; }
 
     }
