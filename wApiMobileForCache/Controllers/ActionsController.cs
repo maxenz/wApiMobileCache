@@ -33,7 +33,7 @@ namespace wApiMobile.Controllers
         }
 
         [HttpPost]
-        public string setFinalServicio(string licencia, string movil, int viajeID, int motivoID, int diagnosticoID, string observaciones, int copago)
+        public string setFinalServicio(long reportNumber, string licencia, string movil, int viajeID, int motivoID, int diagnosticoID, string observaciones, int copago)
         {
             Resultado resultado = ws.setFinalServicio(movil, viajeID, motivoID, diagnosticoID, observaciones, copago);
             return JsonConvert.SerializeObject(resultado);
