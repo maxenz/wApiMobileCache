@@ -30,7 +30,7 @@ namespace wApiMobileForCache.Controllers
         [HttpPost]
         public string setFinalServicio(string movil, int viajeID, int motivoID, int diagnosticoID, string observaciones, int copago)
         {
-            Resultado resultado = ws.setFinalServicio(movil, viajeID, motivoID, diagnosticoID, observaciones,copago);
+            Resultado resultado = ws.setFinalServicio(movil, viajeID, motivoID, diagnosticoID, observaciones,copago,0);
             return JsonConvert.SerializeObject(resultado);
         }
 

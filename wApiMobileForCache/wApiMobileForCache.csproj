@@ -262,7 +262,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Service References\wsIncidentesMobile\WebServices1.wsdl" />
+    <None Include="Service References\wsIncidentesMobile\WebServices1.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

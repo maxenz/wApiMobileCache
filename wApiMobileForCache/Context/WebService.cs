@@ -69,10 +69,10 @@ namespace wApiMobileForCache.Context
             return resultado;
         }
 
-        public Resultado setFinalServicio(string movil, int viajeID, int motivoID, int diagnosticoID, string observaciones, int copago)
+        public Resultado setFinalServicio(string movil, int viajeID, int motivoID, int diagnosticoID, string observaciones, int copago, long reportNumber)
         {
             ws.Open();
-            DataTable dtResultado = ws.SetFinal(viajeID, movil, diagnosticoID, motivoID, copago, observaciones, 0, 0, "").Tables[0];
+            DataTable dtResultado = ws.SetFinalV2(viajeID, movil, diagnosticoID, motivoID, copago, reportNumber, observaciones, 0, 0, "").Tables[0];
             ws.Abort();
             Resultado resultado = ListHelper.ToList<Resultado>(dtResultado).FirstOrDefault();
             if (resultado.Message == "") resultado.Message = "El servicio se ha finalizado correctamente";
