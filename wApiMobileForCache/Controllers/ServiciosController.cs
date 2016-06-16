@@ -31,7 +31,7 @@ namespace wApiMobileForCache.Controllers
             DataSet dsViaje = ws.getViaje(idMovil,id);
             List<ServicioDetalle> lstServ = ListHelper.ToList<ServicioDetalle>(dsViaje.Tables[0]);
             ServicioDetalle servicio = lstServ.FirstOrDefault();
-            servicio.ColorHexa = Helper.oleToHexa(servicio.ColorHexa);
+            servicio.ColorHexa = Helper.argbToHexa(servicio.ColorHexa);
             return servicio;
         }
     }  

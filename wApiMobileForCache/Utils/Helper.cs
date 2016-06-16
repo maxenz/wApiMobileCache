@@ -9,7 +9,7 @@ using wApiMobileForCache.Models;
 
 namespace wApiMobileForCache.Utils
 {
-    public static class Helper
+    public class Helper
     {
         public static string getValueFromQueryString(string key)
         {
@@ -21,7 +21,7 @@ namespace wApiMobileForCache.Utils
         {
             foreach (Servicio s in servicios)
             {
-                s.ColorHexa = oleToHexa(s.ColorHexa);                                
+                s.ColorHexa = argbToHexa(s.ColorHexa);                                
             }
         }
 
@@ -29,7 +29,7 @@ namespace wApiMobileForCache.Utils
         {
             foreach (HistoriaClinica h in hc)
             {
-                h.ColorHexa = oleToHexa(h.ColorHexa);
+                h.ColorHexa = argbToHexa(h.ColorHexa);
             }
         }
 
@@ -46,16 +46,10 @@ namespace wApiMobileForCache.Utils
             return fecha.Substring(6, 2) + "/" + fecha.Substring(4, 2) + "/" + fecha.Substring(0, 4);
         }
 
-        public static string oleToHexa(string colorFromConsulta)
+        public static string argbToHexa(string colorFromConsulta)
         {
-            Color color = ColorTranslator.FromOle(Convert.ToInt32(colorFromConsulta));
-
-            return HexConverter(color);
-        }
-
-        private static String HexConverter(Color c)
-        {
-            return "#" + c.R.ToString("X2") + c.G.ToString("X2") + c.B.ToString("X2");
+            Color colorArgb = Color.FromArgb(Convert.ToInt32(colorFromConsulta));
+            return colorArgb.R.ToString("X2") + colorArgb.G.ToString("X2") + colorArgb.B.ToString("X2");   
         }
 
     }

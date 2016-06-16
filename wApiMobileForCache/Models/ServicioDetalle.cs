@@ -25,6 +25,5 @@ namespace wApiMobileForCache.Models
         public String PlanId { get; set; }
         public decimal CoPago { get; set; }
         public String Observaciones { get; set; }
-        public string Telefono { get; set; }
     }
 }
