@@ -30,7 +30,8 @@ namespace wApiMobileForCache.Utils
                 foreach (var aField in commonFields)
                 {
                     PropertyInfo propertyInfos = aTSource.GetType().GetProperty(aField.Name);
-                    propertyInfos.SetValue(aTSource, dataRow[aField.Name], null);
+                    var value = dataRow[aField.Name];
+                    propertyInfos.SetValue(aTSource, value == DBNull.Value ? "" : value, null);
                 }
                 dataList.Add(aTSource);
             }
