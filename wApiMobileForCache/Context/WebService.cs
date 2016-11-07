@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using NLog;
 using System.Data;
 using System.Linq;
-using System.Web;
 using wApiMobileForCache.Models;
 using wApiMobileForCache.Utils;
 using wApiMobileForCache.wsIncidentesMobile;
@@ -11,10 +9,36 @@ namespace wApiMobileForCache.Context
 {
     public class WebService
     {
-        private IncidentesMobileSoapClient ws;
+        #region Properties
+
+        private static Logger logger = LogManager.GetCurrentClassLogger();
+
+        public IncidentesMobileSoapClient ws { get; set; }
+
+        #endregion
+
+        #region Constructors
+
+        public WebService(string endpoint) : this()
+        {
+            this.ChangeEndPoint(endpoint);
+        }
+
         public WebService()
         {
+            logger.Info("Creando objeto de web service");
             ws = new IncidentesMobileSoapClient();
+        }
+
+        #endregion
+
+        #region Public Methods
+
+        public void ChangeEndPoint(string endpoint)
+        {
+            logger.Info("Cambiando el endpoint del webservice a {0}", endpoint);
+            string fullEndpoint = string.Format("http://{0}/csp/shaman/WebServices.IncidentesMobile.cls", endpoint);
+            ws.Endpoint.Address = new System.ServiceModel.EndpointAddress(fullEndpoint);
         }
 
         public DataSet getViajesMovil(string idMovil)
@@ -69,10 +93,10 @@ namespace wApiMobileForCache.Context
             return resultado;
         }
 
-        public Resultado setFinalServicio(string movil, int viajeID, int motivoID, int diagnosticoID, string observaciones, int copago, long reportNumber)
+        public Resultado setFinalServicio(string movil, int viajeID, int motivoID, int diagnosticoID, string observaciones, int copago, long reportNumber, int horEsp, int minEsp)
         {
             ws.Open();
-            DataTable dtResultado = ws.SetFinalV2(viajeID, movil, diagnosticoID, motivoID, copago, reportNumber, observaciones, 0, 0, "").Tables[0];
+            DataTable dtResultado = ws.SetFinalV3(viajeID, movil, diagnosticoID, motivoID, copago, horEsp, minEsp, reportNumber, observaciones, 0, 0, "").Tables[0];
             ws.Abort();
             Resultado resultado = ListHelper.ToList<Resultado>(dtResultado).FirstOrDefault();
             if (resultado.Message == "") resultado.Message = "El servicio se ha finalizado correctamente";
@@ -89,5 +113,6 @@ namespace wApiMobileForCache.Context
             return resultado;
         }
 
+        #endregion
     }
 }

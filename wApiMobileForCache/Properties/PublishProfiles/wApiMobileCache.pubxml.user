@@ -8,7 +8,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
     <LastUsedPlatform>Any CPU</LastUsedPlatform>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\Maxo\Desktop\deploys</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\Maxo\Desktop\Paramedic\deploys\wapimobilecache</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Antlr3.Runtime.dll">
@@ -22,6 +22,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>06/16/2016 12:10:52</publishTime>
+    </File>
+    <File Include="bin/NLog.config">
+      <publishTime>11/07/2016 16:29:18</publishTime>
+    </File>
+    <File Include="bin/NLog.dll">
+      <publishTime>11/07/2016 16:01:36</publishTime>
+    </File>
+    <File Include="bin/Serilog.dll">
+      <publishTime>11/07/2016 15:56:50</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>06/16/2016 12:10:52</publishTime>
@@ -57,7 +66,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/16/2016 12:10:52</publishTime>
     </File>
     <File Include="bin/wApiMobileForCache.dll">
-      <publishTime>06/16/2016 17:05:43</publishTime>
+      <publishTime>07/11/2016 16:21:37</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>06/16/2016 12:10:52</publishTime>
@@ -272,8 +281,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/orderedList9.png">
       <publishTime>06/16/2016 12:10:52</publishTime>
     </File>
+    <File Include="NLog.config">
+      <publishTime>11/07/2016 16:29:18</publishTime>
+    </File>
     <File Include="packages.config">
-      <publishTime>06/16/2016 12:10:52</publishTime>
+      <publishTime>11/07/2016 16:01:39</publishTime>
     </File>
     <File Include="Properties/DataSources/System.Data.DataSet.datasource">
       <publishTime>06/16/2016 12:10:52</publishTime>
@@ -351,7 +363,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/16/2016 12:10:52</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/16/2016 12:17:36</publishTime>
+      <publishTime>07/11/2016 16:21:48</publishTime>
     </File>
   </ItemGroup>
 </Project>

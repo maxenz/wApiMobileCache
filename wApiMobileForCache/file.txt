@@ -1,0 +1,8 @@
+2016-11-07 16:28:22.7248|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2016-11-07 16:28:23.0008|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125:57772
+2016-11-07 16:28:23.1662|INFO|wApiMobileForCache.Controllers.ReasonsController|Consultando motivos de no realizacion
+2016-11-07 16:28:23.3198|INFO|wApiMobileForCache.Controllers.ReasonsController|La consulta de datos se realizó al servidor http://200.49.156.125:57772/csp/shaman/WebServices.IncidentesMobile.cls
+2016-11-07 16:29:32.3425|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2016-11-07 16:29:32.6195|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125:57772
+2016-11-07 16:29:32.6956|INFO|wApiMobileForCache.Controllers.ReasonsController|Consultando motivos de no realizacion
+2016-11-07 16:29:32.8494|INFO|wApiMobileForCache.Controllers.ReasonsController|La consulta de datos se realizó al servidor http://200.49.156.125:57772/csp/shaman/WebServices.IncidentesMobile.cls

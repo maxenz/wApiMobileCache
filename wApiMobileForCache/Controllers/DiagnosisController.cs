@@ -1,28 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
+﻿using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
 using wApiMobileForCache.Context;
 using wApiMobileForCache.Models;
 using wApiMobileForCache.Utils;
 
-namespace wApiMobile.Controllers
+namespace wApiMobileForCache.Controllers
 {
-    public class DiagnosisController : ApiController
+    public class DiagnosisController : BaseController
     {
-        WebService ws = new WebService();
-
         public List<Diagnostico> Get()
         {
-            string license = Helper.getValueFromQueryString("licencia");
-            DataSet dsDiagnostico = ws.getDatosActualizadosFromTabla("Diagnosticos");
+            DataSet dsDiagnostico = WebService.getDatosActualizadosFromTabla("Diagnosticos");
             List<Diagnostico> lstDiagnosticos = ListHelper.ToList<Diagnostico>(dsDiagnostico.Tables[0]);
             return lstDiagnosticos;
         }
-
     }
 }

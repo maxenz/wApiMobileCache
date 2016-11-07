@@ -6,26 +6,21 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
-using System.Web;
-using System.Web.Helpers;
-using System.Web.Http;
-using System.Web.Mvc;
 using wApiMobileForCache.Context;
 using wApiMobileForCache.Models;
 using wApiMobileForCache.Utils;
 
-namespace wApiMobile.Controllers
+namespace wApiMobileForCache.Controllers
 {
-    public class ServicesController : ApiController
+    public class ServicesController : BaseController
     {
-        WebService ws = new WebService();
+
+        public ServicesController() : base() { }
 
         public List<Servicio> Get()
         {
-            string license = Helper.getValueFromQueryString("licencia");
-            string idMovil = Helper.getValueFromQueryString("idMovil");
-            DataSet dsViajes = ws.getViajesMovil(idMovil);
+
+            DataSet dsViajes = WebService.getViajesMovil(MobileId);
             List<Servicio> lstServ = ListHelper.ToList<Servicio>(dsViajes.Tables[0]);
             Helper.formatColorServicios(ref lstServ);
             return lstServ;
@@ -33,9 +28,7 @@ namespace wApiMobile.Controllers
 
         public ServicioDetalle Get(int id)
         {
-            string license = Helper.getValueFromQueryString("licencia");
-            string idMovil = Helper.getValueFromQueryString("idMovil");
-            DataSet dsViaje = ws.getViaje(idMovil, id);
+            DataSet dsViaje = WebService.getViaje(MobileId, id);
             List<ServicioDetalle> lstServ = ListHelper.ToList<ServicioDetalle>(dsViaje.Tables[0]);
             ServicioDetalle servicio = lstServ.FirstOrDefault();
             servicio.ColorHexa = Helper.oleToHexa(servicio.ColorHexa);

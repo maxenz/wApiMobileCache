@@ -13,18 +13,32 @@ namespace wApiMobileForCache.Models
         public decimal HabLlegada { get; set; }
         public decimal HabFinal { get; set; }
         public decimal HabCancelacion { get; set; }
-        public String FecIncidente { get; set; }
-        public String NroAfiliado { get; set; }
-        public String Aviso { get; set; }
-        public String Partido { get; set; }
-        public String EntreCalle1 { get; set; }
-        public String EntreCalle2 { get; set; }
-        public String Referencia { get; set; }
-        public String Sintomas { get; set; }
-        public String Paciente { get; set; }
-        public String PlanId { get; set; }
+        public string FecIncidente { get; set; }
+        public string NroAfiliado { get; set; }
+        public string Aviso { get; set; }
+        public string Partido { get; set; }
+        public string EntreCalle1 { get; set; }
+        public string EntreCalle2 { get; set; }
+        public string Referencia { get; set; }
+        public string Sintomas { get; set; }
+        public string Paciente { get; set; }
+        public string PlanId { get; set; }
         public decimal CoPago { get; set; }
-        public String Observaciones { get; set; }
+        public string Observaciones { get; set; }
         public string Telefono { get; set; }
+        public int ClasificacionId { get; set; }
+        public byte FlgRename { get; set; }
+        public byte FlgDerivacion { get; set; }
+        public string DerLocalidad { get; set; }
+        public string DerPartido { get; set; }
+        public string DerInstitucion { get; set; }
+        public string DerDomicilio { get; set; }
+        public string DerEntreCalle1 { get; set; }
+        public string DerEntreCalle2 { get; set; }
+        public string DerReferencia { get; set; }
+        public string DerLatitud { get; set; }
+        public string DerLongitud { get; set; }
+        public string Diagnostico { get; set; }
+        public string SintomasItems { get; set; }
     }
 }

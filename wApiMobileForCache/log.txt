@@ -1,0 +1,9 @@
+2016-11-07 16:07:54.3881|INFO|wApiMobileForCache.Controllers.ReasonsController|Consultando motivos de no realizacion
+2016-11-07 16:13:48.4271|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2016-11-07 16:13:48.7540|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a paramedic.dyndns-home.com:57773
+2016-11-07 16:13:48.8359|INFO|wApiMobileForCache.Controllers.ReasonsController|Consultando motivos de no realizacion
+2016-11-07 16:13:49.3264|INFO|wApiMobileForCache.Controllers.ReasonsController|La consulta de datos se realizó al servidor http://paramedic.dyndns-home.com:57773/csp/shaman/WebServices.IncidentesMobile.cls
+2016-11-07 16:14:08.7998|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2016-11-07 16:14:08.7998|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125:57772
+2016-11-07 16:14:08.7998|INFO|wApiMobileForCache.Controllers.ReasonsController|Consultando motivos de no realizacion
+2016-11-07 16:14:08.8968|INFO|wApiMobileForCache.Controllers.ReasonsController|La consulta de datos se realizó al servidor http://200.49.156.125:57772/csp/shaman/WebServices.IncidentesMobile.cls

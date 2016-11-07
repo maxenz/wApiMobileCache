@@ -1,27 +1,26 @@
-﻿using System;
+﻿using NLog;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
 using wApiMobileForCache.Context;
 using wApiMobileForCache.Models;
 using wApiMobileForCache.Utils;
 
-namespace wApiMobile.Controllers
+namespace wApiMobileForCache.Controllers
 {
-    public class ReasonsController : ApiController
+    public class ReasonsController : BaseController
     {
-        WebService ws = new WebService();
+        private static Logger logger = LogManager.GetCurrentClassLogger();
+        public ReasonsController() : base()
+        {
+        }
 
         public List<Motivo> Get()
         {
-            string license = Helper.getValueFromQueryString("licencia");
-            DataSet dsMotivos = ws.getDatosActualizadosFromTabla("MotivosNoRealizacion");
+            logger.Info("Consultando motivos de no realizacion");
+            DataSet dsMotivos = WebService.getDatosActualizadosFromTabla("MotivosNoRealizacion");
+            logger.Info("La consulta de datos se realizó al servidor {0}", WebService.ws.Endpoint.Address);
             List<Motivo> lstMotivos = ListHelper.ToList<Motivo>(dsMotivos.Tables[0]);
             return lstMotivos;
-
         }
 
     }

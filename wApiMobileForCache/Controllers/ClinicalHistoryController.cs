@@ -1,25 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
-using wApiMobileForCache.Context;
 using wApiMobileForCache.Models;
 using wApiMobileForCache.Utils;
 
 
-namespace wApiMobile.Controllers
+namespace wApiMobileForCache.Controllers
 {
-    public class ClinicalHistoryController : ApiController
+    public class ClinicalHistoryController : BaseController
     {
-        WebService ws = new WebService();
+
+        public ClinicalHistoryController() : base() {  }
 
         public List<HistoriaClinica> Get(int id)
         {
-            string license = Helper.getValueFromQueryString("licencia");
-            DataSet dsHistoriaClinica = ws.getHistoriaClinica(id);
+            DataSet dsHistoriaClinica = WebService.getHistoriaClinica(id);
             List<HistoriaClinica> lstHistoriaClinica = ListHelper.ToList<HistoriaClinica>(dsHistoriaClinica.Tables[0]);
             Helper.formatColorHC(ref lstHistoriaClinica);
             Helper.formatFechaHC(ref lstHistoriaClinica);

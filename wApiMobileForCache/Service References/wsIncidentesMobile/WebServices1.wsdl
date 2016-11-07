@@ -51,6 +51,21 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="GetViajeV2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" name="pInc" type="s:long" />
+            <s:element minOccurs="0" name="pMov" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetViajeV2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="GetViajeV2Result" type="s0:DataSet" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="GetViajesMovil">
         <s:complexType>
           <s:sequence>
@@ -129,6 +144,31 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="SetFinalV3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" name="pInc" type="s:long" />
+            <s:element minOccurs="0" name="pMov" type="s:string" />
+            <s:element minOccurs="0" name="pDig" type="s:long" />
+            <s:element minOccurs="0" name="pMot" type="s:long" />
+            <s:element minOccurs="0" name="pAviCos" type="s:long" />
+            <s:element minOccurs="0" name="pHorEsp" type="s:long" />
+            <s:element minOccurs="0" name="pMinEsp" type="s:long" />
+            <s:element minOccurs="0" name="pNroRpt" type="s:long" />
+            <s:element minOccurs="0" name="pObs" type="s:string" />
+            <s:element minOccurs="0" name="pLat" type="s:decimal" />
+            <s:element minOccurs="0" name="pLon" type="s:decimal" />
+            <s:element minOccurs="0" name="pUsr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetFinalV3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element name="SetFinalV3Result" type="s0:DataSet" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="SetLlegada">
         <s:complexType>
           <s:sequence>
@@ -185,6 +225,12 @@
   <wsdl:message name="GetViajeSoapOut">
     <wsdl:part name="parameters" element="s0:GetViajeResponse" />
   </wsdl:message>
+  <wsdl:message name="GetViajeV2SoapIn">
+    <wsdl:part name="parameters" element="s0:GetViajeV2" />
+  </wsdl:message>
+  <wsdl:message name="GetViajeV2SoapOut">
+    <wsdl:part name="parameters" element="s0:GetViajeV2Response" />
+  </wsdl:message>
   <wsdl:message name="GetViajesMovilSoapIn">
     <wsdl:part name="parameters" element="s0:GetViajesMovil" />
   </wsdl:message>
@@ -208,6 +254,12 @@
   </wsdl:message>
   <wsdl:message name="SetFinalV2SoapOut">
     <wsdl:part name="parameters" element="s0:SetFinalV2Response" />
+  </wsdl:message>
+  <wsdl:message name="SetFinalV3SoapIn">
+    <wsdl:part name="parameters" element="s0:SetFinalV3" />
+  </wsdl:message>
+  <wsdl:message name="SetFinalV3SoapOut">
+    <wsdl:part name="parameters" element="s0:SetFinalV3Response" />
   </wsdl:message>
   <wsdl:message name="SetLlegadaSoapIn">
     <wsdl:part name="parameters" element="s0:SetLlegada" />
@@ -234,6 +286,10 @@
       <wsdl:input message="s0:GetViajeSoapIn" />
       <wsdl:output message="s0:GetViajeSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="GetViajeV2">
+      <wsdl:input message="s0:GetViajeV2SoapIn" />
+      <wsdl:output message="s0:GetViajeV2SoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="GetViajesMovil">
       <wsdl:input message="s0:GetViajesMovilSoapIn" />
       <wsdl:output message="s0:GetViajesMovilSoapOut" />
@@ -249,6 +305,10 @@
     <wsdl:operation name="SetFinalV2">
       <wsdl:input message="s0:SetFinalV2SoapIn" />
       <wsdl:output message="s0:SetFinalV2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetFinalV3">
+      <wsdl:input message="s0:SetFinalV3SoapIn" />
+      <wsdl:output message="s0:SetFinalV3SoapOut" />
     </wsdl:operation>
     <wsdl:operation name="SetLlegada">
       <wsdl:input message="s0:SetLlegadaSoapIn" />
@@ -288,6 +348,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetViajeV2">
+      <soap:operation soapAction="http://tempuri.org/WebServices.IncidentesMobile.GetViajeV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetViajesMovil">
       <soap:operation soapAction="http://tempuri.org/WebServices.IncidentesMobile.GetViajesMovil" style="document" />
       <wsdl:input>
@@ -317,6 +386,15 @@
     </wsdl:operation>
     <wsdl:operation name="SetFinalV2">
       <soap:operation soapAction="http://tempuri.org/WebServices.IncidentesMobile.SetFinalV2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetFinalV3">
+      <soap:operation soapAction="http://tempuri.org/WebServices.IncidentesMobile.SetFinalV3" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

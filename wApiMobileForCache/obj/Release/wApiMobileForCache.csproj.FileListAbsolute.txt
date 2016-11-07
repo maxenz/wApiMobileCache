@@ -93,6 +93,11 @@ C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\System.We
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\System.Web.WebPages.xml
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\System.Web.WebPages.Razor.xml
-C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\obj\Release\wApiMobileForCache.csprojResolveAssemblyReference.cache
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\obj\Release\wApiMobileForCache.dll
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\obj\Release\wApiMobileForCache.pdb
+C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\NLog.dll
+C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\Serilog.dll
+C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\NLog.xml
+C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\Serilog.xml
+C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\NLog.config
+C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\obj\Release\wApiMobileForCache.csprojResolveAssemblyReference.cache
