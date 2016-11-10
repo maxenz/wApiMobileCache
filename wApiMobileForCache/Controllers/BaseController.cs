@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web;
 using System.Web.Http;
 using wApiMobileForCache.Context;
 using wApiMobileForCache.Utils;
@@ -26,16 +27,22 @@ namespace wApiMobileForCache.Controllers
         {
             this.License = Helper.getValueFromQueryString("licencia");
             this.MobileId = Helper.getValueFromQueryString("idMovil");
-            if (this.License != null)
-            {
-                this.Endpoint = Helper.getServerConnectiongBySerial(this.License);
-                this.WebService = new WebService(this.Endpoint);
-            }
-            else
-            {
-                throw new ArgumentNullException("Licencia");
-            }
 
+            if (this.License == null)
+            {
+                var form = HttpContext.Current.Request.Form;
+                if (form["license"] != null)
+                {
+                    this.License = form["license"];
+                }
+                else
+                {
+                    throw new ArgumentNullException("Licencia");
+                }
+
+            }
+            this.Endpoint = Helper.getServerConnectiongBySerial(this.License);
+            this.WebService = new WebService(this.Endpoint);
         }
 
         #endregion

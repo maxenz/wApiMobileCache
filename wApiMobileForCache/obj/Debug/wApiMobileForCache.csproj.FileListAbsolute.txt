@@ -165,3 +165,4 @@ C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\NLog.dll
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\Serilog.dll
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\NLog.xml
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\Serilog.xml
+C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\obj\Debug\wApiMobileForCache.csprojResolveAssemblyReference.cache
