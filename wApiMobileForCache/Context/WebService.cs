@@ -37,7 +37,16 @@ namespace wApiMobileForCache.Context
         public void ChangeEndPoint(string endpoint)
         {
             logger.Info("Cambiando el endpoint del webservice a {0}", endpoint);
-            string fullEndpoint = string.Format("http://{0}/csp/shaman/WebServices.IncidentesMobile.cls", endpoint);
+            string fullEndpoint = "";
+            if (endpoint.Contains("http"))
+            {
+                fullEndpoint = string.Format("{0}/csp/shaman/WebServices.IncidentesMobile.cls", endpoint);
+            }
+            else
+            {
+                fullEndpoint = string.Format("http://{0}/csp/shaman/WebServices.IncidentesMobile.cls", endpoint);
+            }
+
             ws.Endpoint.Address = new System.ServiceModel.EndpointAddress(fullEndpoint);
         }
 

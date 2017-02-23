@@ -41,6 +41,7 @@ namespace wApiMobileForCache.Controllers
                 }
 
             }
+
             this.Endpoint = Helper.getServerConnectiongBySerial(this.License);
             this.WebService = new WebService(this.Endpoint);
         }

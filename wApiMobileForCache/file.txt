@@ -1,0 +1,114 @@
+2017-02-21 10:17:46.1128|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-21 10:17:46.2159|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125,9898\SQLEXPRESS
+2017-02-21 10:18:09.6445|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-21 10:18:09.6545|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125,9898\SQLEXPRESS
+2017-02-21 10:18:49.3297|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-21 10:19:16.9030|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125,9898\SQLEXPRESS
+2017-02-21 10:25:46.6655|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-21 10:25:49.3623|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125,9898\SQLEXPRESS
+2017-02-21 10:31:40.8323|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-21 10:31:40.8528|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125,9898\SQLEXPRESS
+2017-02-21 10:36:09.2333|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-21 10:36:09.4953|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125
+2017-02-21 10:48:57.4234|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-21 10:48:57.4972|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125
+2017-02-21 10:49:01.6441|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-21 10:49:01.6606|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125
+2017-02-23 17:01:30.8242|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 17:01:30.9685|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125
+2017-02-23 17:03:02.5264|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 17:03:02.5464|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125
+2017-02-23 17:03:36.3314|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 17:03:51.4261|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125
+2017-02-23 17:04:57.3369|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 17:04:57.4095|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a {
+  "Descripcion": "200.49.156.125:57772",
+  "Url": "200.49.156.125:57772",
+  "CreatedDate": "2017-02-23T19:32:29.56Z",
+  "CreatedBy": null,
+  "UpdatedDate": "2017-02-23T19:32:29.56Z",
+  "UpdatedBy": null,
+  "Id": 14
+}
+2017-02-23 17:06:53.9573|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 17:06:54.0068|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a {
+  "Descripcion": "200.49.156.125:57772",
+  "Url": "200.49.156.125:57772",
+  "CreatedDate": "2017-02-23T19:32:29.56Z",
+  "CreatedBy": null,
+  "UpdatedDate": "2017-02-23T19:32:29.56Z",
+  "UpdatedBy": null,
+  "Id": 14
+}
+2017-02-23 17:08:19.2744|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 17:08:19.3049|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a {
+  "Descripcion": "200.49.156.125:57772",
+  "Url": "200.49.156.125:57772",
+  "CreatedDate": "2017-02-23T19:32:29.56Z",
+  "CreatedBy": null,
+  "UpdatedDate": "2017-02-23T19:32:29.56Z",
+  "UpdatedBy": null,
+  "Id": 14
+}
+2017-02-23 17:09:13.4047|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 17:09:13.4838|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a {
+  "Descripcion": "200.49.156.125:57772",
+  "Url": "200.49.156.125:57772",
+  "CreatedDate": "2017-02-23T19:32:29.56Z",
+  "CreatedBy": null,
+  "UpdatedDate": "2017-02-23T19:32:29.56Z",
+  "UpdatedBy": null,
+  "Id": 14
+}
+2017-02-23 17:12:14.9470|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 17:12:15.1135|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125:57772
+2017-02-23 18:17:17.3961|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:17:17.6548|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125:57772
+2017-02-23 18:17:48.0982|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:17:48.1487|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125:57772
+2017-02-23 18:17:51.9633|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:17:51.9803|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125:57772
+2017-02-23 18:17:58.0488|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:17:58.0643|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125:57772
+2017-02-23 18:18:00.9321|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:18:00.9501|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125:57772
+2017-02-23 18:18:03.6810|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:18:03.7031|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125:57772
+2017-02-23 18:18:06.7355|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:18:06.7455|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125:57772
+2017-02-23 18:18:09.2611|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:18:09.2611|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125:57772
+2017-02-23 18:18:12.3651|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:18:12.3726|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125:57772
+2017-02-23 18:18:16.0855|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:18:16.0855|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 200.49.156.125:57772
+2017-02-23 18:27:40.6798|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:27:40.7514|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://200.49.156.125:57772
+2017-02-23 18:28:55.8838|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:28:55.9619|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-02-23 18:29:02.3268|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:29:02.3378|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-02-23 18:29:05.0925|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:29:05.1025|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-02-23 18:29:07.9223|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:29:07.9378|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-02-23 18:29:10.7811|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:29:10.7936|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-02-23 18:29:13.1614|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:29:13.1715|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-02-23 18:29:15.7166|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:29:15.7306|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-02-23 18:29:18.6044|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:29:18.6164|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-02-23 18:29:22.7849|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:29:22.7959|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-02-23 18:29:25.5515|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:29:25.5650|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-02-23 18:29:33.3344|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:29:33.3464|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-02-23 18:29:36.7282|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:29:36.7442|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-02-23 18:29:38.9960|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:29:39.0090|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-02-23 18:29:54.7064|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-02-23 18:29:54.7189|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://200.49.156.125:57772
