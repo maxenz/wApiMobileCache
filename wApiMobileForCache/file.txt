@@ -112,3 +112,42 @@
 2017-02-23 18:29:39.0090|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
 2017-02-23 18:29:54.7064|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
 2017-02-23 18:29:54.7189|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://200.49.156.125:57772
+2017-04-12 16:52:23.8811|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 16:52:24.3961|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://200.49.156.125:57772
+2017-04-12 16:53:32.1289|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 16:53:32.2143|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://200.49.156.125:57772
+2017-04-12 16:53:53.6560|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 16:53:53.6821|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-04-12 16:55:24.8731|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 16:55:24.9197|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-04-12 16:56:23.6837|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 16:56:23.7268|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://200.49.156.125:57772
+2017-04-12 16:56:59.8256|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 16:56:59.8461|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-04-12 16:58:47.6071|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 16:59:37.0260|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 16:59:37.3253|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-04-12 17:01:24.5485|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 17:01:24.6962|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-04-12 17:01:39.2539|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 17:01:39.2694|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://200.49.156.125:57772
+2017-04-12 17:06:46.5512|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 17:06:57.4466|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-04-12 17:07:54.6607|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 17:07:54.6807|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://200.49.156.125:57772
+2017-04-12 17:12:57.1187|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 17:12:57.2198|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://200.49.156.125:57772
+2017-04-12 17:13:03.2131|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 17:13:03.3127|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-04-12 17:13:22.0204|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 17:13:22.1295|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-04-12 17:13:25.8960|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 17:13:25.9055|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://200.49.156.125:57772
+2017-04-12 17:22:35.4780|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 17:22:35.5836|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://200.49.156.125:57772
+2017-04-12 17:22:41.0607|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-04-12 17:22:41.2043|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a http://remote.omnisaludsa.com.ar:57772
+2017-06-26 10:20:45.2869|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-06-26 10:20:45.9097|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 
+2017-06-26 10:22:09.1483|INFO|wApiMobileForCache.Context.WebService|Creando objeto de web service
+2017-06-26 10:22:09.1823|INFO|wApiMobileForCache.Context.WebService|Cambiando el endpoint del webservice a 

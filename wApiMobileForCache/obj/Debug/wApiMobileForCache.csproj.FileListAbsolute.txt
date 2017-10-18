@@ -128,6 +128,7 @@ C:\Users\Maxo\Desktop\Paramedic\mobilecache\wApiMobileCache\wApiMobileForCache\b
 C:\Users\Maxo\Desktop\Paramedic\mobilecache\wApiMobileCache\wApiMobileForCache\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Maxo\Desktop\Paramedic\mobilecache\wApiMobileCache\wApiMobileForCache\bin\System.Web.WebPages.Razor.xml
 C:\Users\Maxo\Desktop\Paramedic\mobilecache\wApiMobileCache\wApiMobileForCache\obj\Debug\wApiMobileForCache.pdb
+C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\NLog.config
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\wApiMobileForCache.dll.config
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\wApiMobileForCache.dll
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\wApiMobileForCache.pdb
@@ -135,6 +136,8 @@ C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\Antlr3.Ru
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\EntityFramework.dll
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\Newtonsoft.Json.dll
+C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\NLog.dll
+C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\Serilog.dll
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\System.Net.Http.Formatting.dll
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\System.Web.Helpers.dll
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\System.Web.Http.dll
@@ -147,6 +150,8 @@ C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\System.We
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\System.Web.WebPages.dll
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\System.Web.WebPages.Razor.dll
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\WebGrease.dll
+C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\NLog.xml
+C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\Serilog.xml
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\EntityFramework.xml
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\Newtonsoft.Json.xml
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\System.Net.Http.Formatting.xml
@@ -160,9 +165,3 @@ C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\System.We
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\System.Web.WebPages.Razor.xml
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\obj\Debug\wApiMobileForCache.dll
 C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\obj\Debug\wApiMobileForCache.pdb
-C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\NLog.config
-C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\NLog.dll
-C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\Serilog.dll
-C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\NLog.xml
-C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\bin\Serilog.xml
-C:\Users\Maxo\Desktop\Paramedic\wapimobilecache\wApiMobileForCache\obj\Debug\wApiMobileForCache.csprojResolveAssemblyReference.cache

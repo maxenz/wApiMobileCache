@@ -4,6 +4,7 @@ using System.Linq;
 using wApiMobileForCache.Models;
 using wApiMobileForCache.Utils;
 using wApiMobileForCache.wsIncidentesMobile;
+using wApiMobileForCache.wsIngresosDiarios;
 
 namespace wApiMobileForCache.Context
 {
@@ -15,11 +16,13 @@ namespace wApiMobileForCache.Context
 
         public IncidentesMobileSoapClient ws { get; set; }
 
-        #endregion
+		public IngresosDiariosSoapClient wsIngresosDiarios { get; set; }
 
-        #region Constructors
+		#endregion
 
-        public WebService(string endpoint) : this()
+		#region Constructors
+
+		public WebService(string endpoint) : this()
         {
             this.ChangeEndPoint(endpoint);
         }
@@ -28,6 +31,7 @@ namespace wApiMobileForCache.Context
         {
             logger.Info("Creando objeto de web service");
             ws = new IncidentesMobileSoapClient();
+			wsIngresosDiarios = new IngresosDiariosSoapClient();
         }
 
         #endregion
@@ -91,6 +95,16 @@ namespace wApiMobileForCache.Context
             if (resultado.Message == "") resultado.Message = "La llegada se dio correctamente";
             return resultado;
         }
+
+		public Resultado setIngresoDiario(MobileAccessTime ing)
+		{
+			wsIngresosDiarios.Open();
+			DataTable dtResultado = wsIngresosDiarios.SetIngresoAndroid(ing.Legajo, ing.DNI, ing.Movil, ing.TipoMovimiento,(decimal)ing.Latitud, (decimal)ing.Longitud, ing.Telefono).Tables[0];
+			ws.Abort();
+			Resultado resultado = ListHelper.ToList<Resultado>(dtResultado).FirstOrDefault();
+			if (resultado.Message == "") resultado.Message = "La fichada se realizó correctamente.";
+			return resultado;
+		}
 
         public Resultado setSalidaMovil(string movil, int viajeID)
         {
